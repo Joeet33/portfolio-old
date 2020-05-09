@@ -2,8 +2,6 @@
 
 $(document).ready(function(){
 
-alert("We use cookies on this site to enhance your user experience.\nFor a complete overview of all cookies used, please see your personal settings.");
-    
 $("#flex-item_1").click(function(){
    
   //alert("Page 1 Button working");
