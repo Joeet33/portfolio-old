@@ -1,10 +1,10 @@
-// JavaScript Document
-
 $(document).ready(function(){
 
-$("#flex-item_1").click(function(){
-   
+// JavaScript Document
+
   //alert("Page 1 Button working");
+
+  $("#flex-item_1").click(function(){
  
 $("title").text("Home");
    
@@ -92,6 +92,32 @@ $("#main5").show();
    
 });
 
+
+	
+$("#smallfont").click(function() {
+	$("#main3text").removeClass().addClass("maintextsmall");
+	
+	$(".tooltip").css({"font-size": ".8vw", "right": "16vw"});
+	
+});	
+
+	
+$("#normalfont").click(function() {
+	$("#main3text").removeClass().addClass("maintextnormal");
+
+		$(".tooltip").css({"font-size": "1vw", "right": "15vw"});
+});	
+
+	
+$("#biggerfont").click(function() {
+	
+	$("#main3text").removeClass().addClass("maintextbig");
+	
+    $(".tooltip").css({"font-size": "1.5vw", "right": "14vw"});	
+	
+});
+
+
 //mobile navigation start
 
 //When a click on the hamburger icon happens
@@ -121,8 +147,6 @@ $("#hamburgermenu").click(function() {
     $(".main").css({"height": "75vh"});
       
     }
-    
-  
     
   });
     
@@ -198,7 +222,6 @@ $("#hamburgermenu").click(function() {
     
       $("#main5").show();
     
-    
   });	
 
-});
+  });
